@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Sergio Salgado</title>
+    <meta name="description" content="Desarrollador front end con enfoque en React JS, en proceso de aprendisaje de flutter">
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+          rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+ 
+    <style>
+      p {
+        font-family: "Open Sans", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-weight: 400;
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        text-align: center;
+      }
+      .contacto_titulo {
+        color: white;
+      }
+      .css-shield {
+        color: #33a4e5;
+      }
+      .javascript {
+        color: #f4c658;
+      }
+      .react {
+        color: #48cff8;
+      }
+      .node {
+        color: #6db64f;
+      }
+      .expres {
+        color: #6db64f;
+      }
+      .photoshop {
+        color: #00c3f8;
+      }
+      .illustrator {
+        color: #f87900;
+      }
+      li {
+        list-style: none;
+      }
+      .sobre-mi {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;   margin-top: 2em;
+        background-color: honeydew;
+      }
+      .sobre_mi_spacio {
+        display: flex;
+        justify-content: space-around;
+     
+      }
+      .contacto {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: darkorange;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+      }
+      .contacto_iconos {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        width: 15%;
+        margin-left: 5px;
+      }
+      .habilidades {
+        width: 50%;
+        margin:1.5em
+      }
+      li {
+        width: 110px;
+        padding: 0.3em;
+      }
+      .habilidad_individual {
+        color: #ec6231;
+        padding: 0.3em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+      }
+      .habilidades_puesto {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .profile_image{
+        height: 350px;
+        border-radius: 50%;
+      }
+      .descripcion{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+      }
+      .fa-linkedin{
+        color: #0e76a8 
+      }
+      .fa-envelope {
+
+        color: aliceblue;
+      }
+      .fa-github{
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="sobre-mi">
+      <div class="contacto">
+        <h4 class="contacto_titulo">Contactame por medio de:</h4>
+        <div class="contacto_iconos">
+          <a
+            href="https://www.linkedin.com/in/sergio-pablo-salgado/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+
+          <i id="correoIcon" class="far fa-envelope fa-2x"></i>
+
+
+        </div>
+      </div>
+      <div class="sobre_mi_spacio">
+        <div class="descripcion">
+          <img class="profile_image" src="./imagenes/perfil/perfil-raw-circle.jpg" alt="foto de sergio salgado desarrollador web" />
+          <h3>Sergio Salgado</h1>
+          <h3>Desarrollador Web Autodidacta ReactJS, NextJS</h1>
+        </div>
+
+        <div class="habilidades">
+          <ul class="habilidades_puesto">
+            <h2>Front-End</h2>
+            <li class="react"><i class="fab fa-2x fa-react"></i>React JS</li>
+            <li class="javascript"><i class="fab fa-2x fa-js-square"></i>JS</li>
+            <li class="css-shield"><i class="fab fa-css3-alt fa-2x"></i>CSS</li>
+            <li class="habilidad_individual html">
+              <i class="fab fa-html5 fa-2x"></i>HTML
+            </li>
+            <!-- <br />
+            <h2>Back-end</h2>
+            <li class="node"><i class="fab fa-2x fa-node-js"></i>Node JS</li>
+            <li class="expres"><i class="fab fa-2x fa-node-js"></i>Express</li>
+            <br /> -->
+            <h2>Maquetación web</h2>
+            <li class="photoshop">
+              <i class="fab fa-2x fa-adobe"></i>Photoshop
+            </li>
+            <li class="illustrator">
+              <i class="fab fa-2x fa-adobe"></i>Illustrator
+            </li>
+            <br />
+          </ul>
+        </div>
+      </div>
+    </main>
+    <section class="proyecto_completo">
+      <h3>Proyectos</h3>
+      
+      <div class="projectos_grid">
+        <div  class="proyecto_superior">
+          <img class="img_proyecto" src="./imagenes/app1.webp" height="273px" width="500px" alt="" />
+          <div class="proyecto_descripcion">
+            <h3>Obituario Virtual</h3>
+            <p>
+              Una Aplicación para guardar clientes y gestionar las ordenes,
+              cuenta con un ordenamiento automático por fechas
+            </p>
+            <h5>Tecnologías</h5>
+            <p>
+              Firebase Firestore, react-router-dom para la conexion entre paginas y Context API para la manipulacion del estado.
+            </p>
+            <a href="https://quizzical-hodgkin-72a801.netlify.app/" target="_blank" class="btn">Ver en línea</a>
+
+          </div>
+          
+        </div>
+        <div class="bottom_tech">
+          <div class="tecnologias">
+            
+            
+            <img
+              class="imagen_tecnologias"
+              src="./imagenes/tecnologias/react.webp"
+              alt="logo de react js"
+            />
+            <img
+            class="imagen_tecnologias"
+            src="./imagenes/tecnologias/firebase.webp"
+            alt="logo de firebase"
+          />
+            <img
+              class="imagen_tecnologias"
+              src="./imagenes/tecnologias/netlify.webp"
+              alt="logo de netlify"
+            />
+     
+          </div>
+        </div>
+      </div><div class="projectos_grid">
+        <div class="proyecto_superior">
+          <img class="img_proyecto especial" src="./imagenes/app2.webp"  width="500px" alt="imagen de aplicacion de ejercicios online" />
+         
+          <div class="proyecto_descripcion">
+            <h3>Aplicacion de Muestra de Proovedores de Frutos Secos</h3>
+            <p>
+              creada en Next JS usando la Context API, utilizando contenido estatico, y renderizado desde el servidor, con autenticación en Firebase, y CRUD con firestore.
+            </p>
+            <h5>Tecnologías</h5>
+            <p>
+              Firebase Auth, Firestore, Storage, Elementos integrados de NextJs como Router, Images y Link
+            </p>
+            <a href="https://quizzical-hodgkin-72a801.netlify.app/" target="_blank" class="btn">Ver en línea</a>
+          </div>
+
+        </div>
+        <div class="bottom_tech">
+          <div class="tecnologias">
+            <img
+              class="imagen_tecnologias"
+              src="./imagenes/tecnologias/react.webp"
+              alt="logo de react js"
+            />
+          
+            <img
+              class="imagen_tecnologias"
+              src="./imagenes/tecnologias/next.webp"
+              alt="logo de next"
+            />
+            <img
+              class="imagen_tecnologias"
+              src="./imagenes/tecnologias/firebase.webp"
+              alt="logo de firebase"
+            />
+            <img
+              class="imagen_tecnologias"
+              src="./imagenes/tecnologias/vercel.webp"
+              alt="logo de vercel"
+            />
+            <img
+            class="imagen_tecnologias tail"
+            src="./imagenes/tecnologias/tailwindcss-pre.webp"
+            alt="logo de tailwind"
+          />
+          </div>
+         
+        </div>
+      </div>
+   
+    </section>
+    
+    <script src="./index.js"></script>
+  </body>
+</html>
